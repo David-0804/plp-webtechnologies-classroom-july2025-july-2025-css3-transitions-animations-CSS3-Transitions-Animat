@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic UI Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Interactive UI with CSS & JavaScript</h1>
+  </header>
+
+  <section class="demo-section">
+    <h2>Part 1: CSS Animation</h2>
+    <button id="animateBtn">Animate Box</button>
+    <div id="animatedBox"></div>
+  </section>
+
+  <section class="demo-section">
+    <h2>Part 2: Function Output</h2>
+    <button onclick="showSum(12, 8)">Calculate Sum</button>
+    <p id="sumResult"></p>
+  </section>
+
+  <section class="demo-section">
+    <h2>Part 3: Modal Interaction</h2>
+    <button id="openModal">Open Modal</button>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <p>This is a modal window</p>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created by David · Assignment Ready</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

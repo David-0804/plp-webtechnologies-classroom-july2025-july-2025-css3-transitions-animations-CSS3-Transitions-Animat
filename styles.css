@@ -1,0 +1,86 @@
+/* Global Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.demo-section {
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Animated Box */
+#animatedBox {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #e74c3c;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  border-radius: 8px;
+}
+
+#animatedBox.active {
+  transform: scale(1.5) rotate(45deg);
+  background-color: #2ecc71;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
